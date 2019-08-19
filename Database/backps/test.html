@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LRAMS</title>
+<link rel="stylesheet" type="text/css" href="config.css">
+<script src="updateTable.js"></script>
+</head>
+<body>
+<!-- example comment -->
+<div class="header">
+  <h1>LRAMS</h1>
+  <p>The Long Range Animal Management System Control Panel</p>
+</div>
+<!--
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+-->
+<div class="row">
+  <div class="leftcolumn">
+	<!-- this is the metadata display panel
+    <div class="card">
+      <h3>Metadata Display</h3>
+		<h5> Current image metadata</h5>
+		<div style="overflow-x:auto">
+		<table id="currentSel">
+		  <p> Please Select a date to get image metadata</p>
+		</table>
+		</div>
+    </div>
+	-->
+    <div class="card">
+      <h3>Image Selection</h3>
+	<form name="dateForm" method="get" action="javascript:updateTable()">
+		Select a date to view: <br>
+		<input type="date" name="date" id="dateval" value="2019-04-28">
+		<input type="submit" name="submit" value="View Images">
+	</form>
+
+	  
+	  <!-- This is the image selection table-->
+	  	<div style="overflow-x:auto">
+	  	<div style="overflow-y:auto;">
+		<!-- for y overflow-->
+			<table id="selection">
+			  <p> Please Select a date to get images</p>
+			</table>
+		</div>
+		</div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>Current Image:</h3>
+	  <!-- This is where the image viewing part of the code will go -->
+      <div>
+		<img id="image" class="img" src="" alt="Please Select a valid image">
+	  </div>
+    </div>
+    <div class="card">
+      <h3>About the LRAMS Team</h3>
+	  <h4>Benjamin Starks</h4>
+      <p></p>
+	  <h4>Michael Hagaman</h4>
+	  <p></p>
+	  <h4>Sean Dormiani</h4>
+	  <p></p>
+	  <h4>Tyler Burke</h4>
+	  <p>Tyler is the author of the Database and User Interface Subsystem</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2></h2>
+</div>
+</body>
+</html>
